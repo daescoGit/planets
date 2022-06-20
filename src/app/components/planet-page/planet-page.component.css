@@ -1,0 +1,87 @@
+* {
+	color: white;
+}
+
+h1 {
+	color: #555555;
+	font-size: 1.8em;
+}
+
+.stats {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.stat {
+	margin-bottom: 25px;
+}
+
+.stat-text-1 {
+	color: rgb(91, 156, 213);
+	font-size: 1em;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(91, 156, 213, 0.3);
+}
+
+.stat-text-2 {
+	color: #3d3f51;
+	font-size: 2em;
+	padding-top: 5px;
+}
+
+.planet-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: 16px;
+	background-color: black;
+	-webkit-box-shadow: 0px 0px 10px 5px rgb(255 255 255 / 20%);
+	box-shadow: 0px 0px 10px 5px rgb(255 255 255 / 20%);
+}
+
+.planet-content {
+	display: flex;
+	padding: 0px 70px;
+	justify-content: space-between;
+	height: 760px;
+}
+
+.planet-header {
+	display: flex;
+	height: 70px;
+	background-color: white;
+	width: 100%;
+	padding: 0 20px;
+	align-items: center;
+}
+
+.trooper {
+	padding: 12px;
+	height: 100%;
+}
+
+.planet-image {
+	width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+	.planet-content {
+		padding: 30px;
+		/* font size */
+	}
+
+	.planet-header {
+		height: 40px;
+	}
+
+	.trooper {
+		padding: 8px;
+	}
+
+	h1 {
+		font-size: 1.6em;
+	}
+}

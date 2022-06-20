@@ -1,0 +1,11 @@
+<div class="container-wrapper">
+	<div class="side-border"></div>
+	<div class="card-container">
+		<app-planet-card
+			*ngFor="let planet of planets; index as i" 
+			[planet]="planet"
+			[planetID]="i+1"
+		></app-planet-card>
+	</div>
+	<div class="side-border"></div>
+</div>

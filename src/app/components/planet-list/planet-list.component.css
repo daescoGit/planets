@@ -1,0 +1,25 @@
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 16px;
+	height: 900px;
+	background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.5) 75%, rgba(0,0,0,0) 100%);
+}
+
+.side-border {
+	width: 4px;
+	background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(171,147,51,1) 50%, rgba(0,0,0,0) 100%);
+}
+
+.container-wrapper {
+	display: flex;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+	.card-container {
+		width: 100%;
+		column-gap: 10px;
+	}
+}

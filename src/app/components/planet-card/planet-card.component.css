@@ -1,0 +1,78 @@
+svg.material-icons {
+	height: 24px;
+	width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+	margin-right: 8px;
+}
+
+.card svg.material-icons path {
+	fill: #888;
+}
+
+.card {
+	all: unset;
+	border-radius: 4px;
+	border: 1px solid #eee;
+	/* background-color: #fafafa; */
+	/* background: radial-gradient(circle, rgba(74,16,221,1) 0%, rgba(74,16,221,0.5665616588432247) 100%); */
+	color: white;
+	width: 200px;
+	margin: 0 8px 16px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+	line-height: 24px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.2em;
+
+	background: rgba(240, 207, 255, 0.19);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.8px);
+	-webkit-backdrop-filter: blur(5.8px);
+	border: 1px solid rgba(240, 207, 255, 0.3);
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+}
+
+.card-image {
+	width: 100%;
+	opacity: 0.1;
+}
+
+.card:not(:last-child) {
+	margin-right: 0;
+}
+
+.card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.card:hover .material-icons path {
+	fill: #ab9333;
+}
+
+.inner-border {
+	height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(171,147,51,1) 50%, rgba(0,0,0,0) 100%);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+	.card {
+		height: 16px;
+		margin: 8px 0;
+	}
+}
